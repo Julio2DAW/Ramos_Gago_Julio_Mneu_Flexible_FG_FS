@@ -18,10 +18,49 @@ ul li:nth-child(1){
     width: 300px;
     margin-right: 20px;
     background-color: orange;
+    flex-grow: 0;   /*
+    Lo que le estoy diciendo con esta propiedad es que cuando las cajas 
+    aumenten de tamaño, esta no lo haga.
+    */
+    flex-shrink: 0; /*
+    Lo que le estoy diciendo con esta propiedad es que cuandos las cajas
+    disminuyan de tamaño, esta no lo haga.
+    */
 }
 
 ul li:nth-child(2){
     width: 300px;
     margin-right: 20px;
     background-color: blue;
+    flex-grow: 1;   /*
+    Lo que le estoy diciendo con esta propiedad es que cuando las cajas 
+    aumenten de tamaño, esta ocupe la mitad del espacio sobrante.
+    */
+    flex-shrink: 2; /*
+    Lo que le estoy diciendo con esta propiedad es que cuandos las cajas
+    disminuyan de tamaño, esta lo haga el doble de rápido que la caja tres.
+    */
+}
+
+ul li:nth-child(3){
+    width: 300px;
+    background-color: black;
+    flex-grow: 1;  /*
+    Lo que le estoy diciendo con esta propiedad es que cuando las cajas 
+    aumenten de tamaño, esta ocupe la mitad del espacio sobrante.
+    */
+    flex-shrink: 1; /*
+    Lo que le estoy diciendo con esta propiedad es que cuandos las cajas
+    disminuyan de tamaño, esta lo haga más lenta que las demás.
+    */
+}
+
+ul li:nth-child(4){
+    width: 300px;
+    margin-left: 20px;
+    background-color: aqua;
+    flex-shrink: 3; /*
+    Lo que le estoy diciendo con esta propiedad es que cuandos las cajas
+    disminuyan de tamaño, esta lo haga el triple de rápido que la caja tres.
+    */
 }
