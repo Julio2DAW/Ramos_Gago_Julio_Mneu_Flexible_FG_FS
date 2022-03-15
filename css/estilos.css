@@ -1,0 +1,27 @@
+/**
+    @file estilos.css
+    @author Julio Antonio Ramos Gago <jramosgago.guadalupe@alumnado.fundacionloyola.net>
+    @license GPL-3.0
+*/
+nav{
+    width: 1160px;
+    background-color: darkslategrey;
+    color: white;
+    padding: 0px 20px;
+}
+
+nav ul{
+    display: flex;
+}
+
+ul li:nth-child(1){
+    width: 300px;
+    margin-right: 20px;
+    background-color: orange;
+}
+
+ul li:nth-child(2){
+    width: 300px;
+    margin-right: 20px;
+    background-color: blue;
+}
